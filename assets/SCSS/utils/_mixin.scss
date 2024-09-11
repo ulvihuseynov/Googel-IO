@@ -1,0 +1,17 @@
+@mixin flexable(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin color($color,$bg-color){
+   color: $color;
+   background-color:$bg-color ;
+}
+
+@mixin align{
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+    gap: 10px; 
+}

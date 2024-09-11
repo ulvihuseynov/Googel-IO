@@ -1,0 +1,22 @@
+#expect{
+    margin-top: 200px;
+.expect-heading{
+    h3{
+        font-family: $font-roboto;
+        font-size: 34px;
+    }
+}
+.expect-item{
+   width: 95%;
+  
+    .expect-header{
+       
+        img{
+            width: 100%;
+           
+            outline: 1px solid gray;
+            border-radius: 20px;
+        }
+    }
+}
+}
