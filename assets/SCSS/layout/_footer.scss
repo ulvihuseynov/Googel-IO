@@ -1,0 +1,57 @@
+.footer-container{
+    font-family: $font-arial;
+padding: 30px 60px 30px 30px;
+    background-color: $primary-color;
+    .footer-item{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      @include responsive(medium){
+        flex-direction: column;
+      
+      }
+    .comunnity-box{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: $gap-30;
+        @include responsive(medium){
+       flex-direction: column;
+       align-items: self-start;
+         }
+      p{
+        color: $third-color;
+        font-size: 20px;
+        line-height: 28px;
+      }
+      .comunnity-item{
+        display: flex;
+        gap: 20px;
+     @include responsive(medium){
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 0px;
+     }
+      }
+        a{
+            color: rgb(160, 160, 160);
+            line-height: $l-height-24;
+
+        }
+      }
+      .developer-box{
+       
+    
+        a{
+            width: 80%;
+            display: inline-block;
+            color: rgb(160, 160, 160);
+            @include responsive(medium){
+              margin-top: 20px;
+              width: 50%;
+            }
+        }
+    }
+    }
+    
+  }

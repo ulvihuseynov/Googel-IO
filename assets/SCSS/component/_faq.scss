@@ -1,0 +1,40 @@
+#faq{
+    font-family: $font-arial;
+    .faq-header{
+        h4{
+            font-family: $font-roboto;
+            font-size: 34px;
+        }
+        p{
+            line-height: $l-height-24;
+            color: rgb(115, 115, 115);
+        }
+    }
+    .accordion{
+        
+        border-radius: 20px;
+       margin-top: 30px;
+      overflow: hidden;
+        .accordion-item{
+            background-color: rgb(233, 233, 233);
+            padding: 0px 30px 0px 0px;
+            cursor: pointer;
+            transition: all .4s;
+            &:hover{
+                background-color: rgb(216, 216, 216);
+               }
+           .accordion-heading{
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+           }
+           .faq-content{
+            display: none;
+            background-color: $third-color;
+            padding: 20px ;
+            width: 100%;
+           
+           }
+        }
+    }
+}

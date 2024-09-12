@@ -1,0 +1,65 @@
+#inner-schedule{
+    margin: 60px 0;
+    font-family: $font-arial;
+.schedule-header{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    @include responsive(small){
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+        gap: $gap-30;
+    }
+    .schedule-content{
+        h1{
+            font-size: $heading-font;
+            font-family: $font-roboto;
+            padding-bottom: 10px;
+        }
+        p{
+            line-height: $l-height-24;
+        }
+    }
+   
+}
+.activity{
+    display: flex;
+    gap: $gap-30;
+   border-bottom: 1px solid $primary-color;
+   align-items: center;
+   .date{
+    padding: 14px;
+   
+    .clock{
+    font-weight: $fw-700;
+padding: 14px 0;
+@include responsive(small){
+    font-size: 12px;
+}
+    }
+    .gmt{
+        text-align: right;
+        @include responsive(small){
+            font-size: 12px;
+        }
+    }
+   }
+
+}
+.event{
+    h6{
+        font-size: 20px;
+        padding-bottom: 10px;
+        @include responsive(small){
+            font-size: 16px;
+        }
+    }
+    P{
+        @include responsive(small){
+            font-size: 14px;
+            line-height: 14px;
+        } 
+    }
+}
+}

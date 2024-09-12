@@ -1,0 +1,23 @@
+#see-you{
+    margin: 80px 0;
+    .see-you-item{
+        background-color: rgb(233, 233, 233);
+       border: 1px solid gray;
+        border-radius: 20px;
+       overflow: hidden;
+        .item-heading{
+            h5{
+font-family: $font-roboto;
+font-size: 34px;
+
+line-height: 40px;
+padding: 50px;
+            }
+        }
+        .item-content {
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+#speakers{
+    margin: 40px 0;
+.speaker-content{
+    display: flex;
+    background-color: rgb(233, 233, 233);
+    border: 1px solid gray;
+     border-radius: 20px;
+     justify-content: space-between;
+     @include responsive(medium){
+        flex-direction: column;
+     }
+     .content-box{
+        padding: 60px 40px;
+        h1{
+            font-family: $font-roboto;
+font-size: $heading-font;
+line-height: 40px;
+padding-bottom: 10px;
+
+        }
+        p{
+font-family: $font-arial;
+        }
+     }
+    .img-box{
+        width: 60%;
+        @include responsive(medium){
+         width: 100%;
+         }
+        img{
+            width: 100%;
+        }
+    }
+}
+}

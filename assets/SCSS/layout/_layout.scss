@@ -2,6 +2,9 @@
     width: 85%;
     // max-width: 1140px;
     margin-inline: auto;
+    @include responsive(medium){
+        width: 95%;
+    }
 }
 .p-16{
     padding: 16px;
@@ -10,7 +13,12 @@
     display: flex;
     flex-wrap:wrap;
 }
-
+.border-bottom{
+    border-bottom: 1px solid gray;
+}
+.translateY{
+    transform: translateY(500px);
+}
 .justify-center{
     justify-content: center;
 }

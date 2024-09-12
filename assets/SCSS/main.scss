@@ -5,6 +5,17 @@
 
 @import '../SCSS/layout/layout';
 @import '../SCSS/layout/navbar';
+@import '../SCSS/layout/footer';
+
+
+@import '../SCSS/component/faq';
+@import '../SCSS/component/speaker-person';
+@import '../SCSS/component/speakers-card';
+
 
 @import '../SCSS/pages/Home/expect';
-@import '../SCSS/pages/Home/about'
+@import '../SCSS/pages/Home/about';
+@import '../SCSS/pages/Home/see-you';
+@import "../SCSS/pages/speakers/speaker-content" ;
+@import "../SCSS/pages/team/team" ;
+@import "../SCSS/pages/schedule/schedule" ;

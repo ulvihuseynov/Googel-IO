@@ -1,6 +1,7 @@
 header{
     .header-container{
         height: 60px;
+        
     nav{
       height: 50px; 
         display: flex;
@@ -11,6 +12,9 @@ header{
         right: 0;
         gap: $gap-30;
 font-family:$font-arial;
+@include responsive(medium){
+    justify-content: space-between;
+}
 .logo{
     a{
         font-size: 28px;
@@ -26,9 +30,12 @@ font-family:$font-arial;
         }
     }
 }
-        ul{
+        .nav-list{
             display: flex;
           gap: $gap-30;
+          @include responsive(medium){
+            display: none;
+        }
             li{
                 a{
                     color: rgba(0, 0, 0,0.87);
@@ -43,6 +50,63 @@ font-family:$font-arial;
                 }
             }
         }
-    }
+    
+    .open-btn{
+        font-size: 20px;
+        margin-right: 40px;
+        display: none;
+        cursor: pointer;
+        @include responsive(medium){
+            display: block;
+        }
+    }}
 }
+}
+
+// * responsive
+header{
+    .mobile-menu{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: $third-color;
+        display: none;
+        transition: all .5s;
+     @include responsive(medium){
+       display: block;
+     }
+        .header{
+            border-bottom: 1px solid gray;
+            margin-bottom: 14px;
+            padding: 20px;
+            .heading {
+            padding-bottom: 10px;}
+            .sub-heading{
+                font-size: 14px;
+                color: rgb(130, 130, 130);
+            }
+        }
+        .mobile-navbar{
+            padding:10px  20px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            li{
+                padding: 10px;
+                transition: all .4s;
+                &:hover{
+                    background-color: rgb(240, 240, 240);
+                  
+                }
+                a{
+                    color: rgba(0, 0, 0,0.87);
+                    font-size: 16px;
+                    transition: all .4s;
+                   
+                  
+                }
+            }
+        }
+    }
 }
